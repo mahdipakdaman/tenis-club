@@ -10,7 +10,7 @@ class Member(models.Model):
 class Product(models.Model):
     productname = models.CharField(max_length=255)
     inventory = models.IntegerField(null = False)
-    productpic = models.ImageField(upload_to='photos/')
+    productpic = models.ImageField(upload_to='statics/')
     price = models.DecimalField(max_digits=8, decimal_places=2)
 
 def __str__(self):
